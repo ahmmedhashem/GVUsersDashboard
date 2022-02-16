@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+$width1: 300px;
+$width2:    770px;
+$imgheight: 569px;
+$textColor: #FFF;
+
+h2,h3,h4,h5,h6{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+p{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+a,button{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+li{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+span{
+  font-family: Roboto;
+  font-style: normal;
+}
+::placeholder{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+
+@-webkit-keyframes animate-positive {
+  0% { width: 0%; }
+}
+@keyframes animate-positive {
+  0% { width: 0%; }
+}
+
+
+::placeholder{
+  color: #FFF;
+}
+
+button,input,select{
+  &:hover{
+      box-shadow: none!important;
+      outline: none!important;
+  }
+  &:focus{
+      box-shadow: none!important;
+      outline: none!important;
+  }
+}
+
+a{
+  cursor: pointer;
+}

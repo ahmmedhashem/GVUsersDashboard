@@ -1,0 +1,170 @@
+@import "../../../styles.scss";
+
+.team{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 100px;
+    @media (min-width: $width1) and (max-width: $width2) {
+      padding: 0 15px;
+    }
+    .heading{
+      margin-top: 52px;
+      margin-bottom: 28px;
+      @media (min-width: $width1) and (max-width: $width2) {
+        text-align: left;
+      }
+      h3{
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 107.19%;
+          @media (min-width: $width1) and (max-width: $width2) {
+            font-size: 24px;
+          }
+        }
+    }
+    .links{
+        margin-bottom: 15px;
+        button{
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            width: 79px;
+            height: 79px;
+            border: 2px solid $textColor;
+            box-sizing: border-box;
+            border-radius: 50%;
+            display: inline-grid;
+            padding: 24px 10px;
+            margin: 0 8px;
+            background: unset;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 14px;
+            }
+        }
+        .arts{
+          @media (min-width: $width1) and (max-width: $width2) {
+            float: left;
+          }
+        }
+        .music{
+          @media (min-width: $width1) and (max-width: $width2) {
+            float: right;
+          }
+        }
+        .robitics,.music{
+          @extend button;
+          position: relative;
+        }
+    }
+    .notifications{
+      width: 61%;
+      position: absolute;
+      bottom: 0px;
+      left: 19%;
+      @media (min-width: $width1) and (max-width: $width2) {
+        width: 85%;
+        left: 2%;
+      }
+        .col-3{
+          width: 21%;
+        }
+        .col-9{
+          width: 79%;
+          border-bottom-right-radius: 28px;
+          border-top-right-radius: 28px;
+        }
+        .card{
+          border-radius: 28px;
+          margin: 0;
+          padding: 0;
+          border: none;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          background: url('../../../assets/img/unsplash_dKd3p6gha-c.png'), linear-gradient(22.73deg, #FFFFFF 33.23%, #C2C2C2 108.91%);
+          box-shadow: 0px 11px 30px -3px rgba(0, 0, 0, 0.25);
+          background-repeat: no-repeat;
+          @media (min-width: $width1) and (max-width: $width2) {
+            background: url('../../../assets/img/unsplash_dKd3p6gha-c-2.png'), linear-gradient(22.73deg, #FFFFFF 33.23%, #C2C2C2 108.91%);
+          }
+          .close{
+            position: absolute;
+            right: 40px;
+            top: 24px;
+            font-family: Roboto;
+            font-size: 36px;
+            line-height: 161%;
+            color: #050505;
+            transform: rotate(45deg);
+            cursor: pointer;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 18px;
+            }
+          }
+          .replay{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 98.3%;
+            text-decoration: none;
+            background: linear-gradient(90deg, #00FF85 0%, #003827 222.91%);
+            border-radius: 4px;
+            position: absolute;
+            bottom: -10px;
+            right: 45px;
+            padding: 12px 79px;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 12px;
+              padding: 6px 36px;
+              right: 15px;
+            }
+          }
+          img{
+            width: 100%;
+            height: 100%;
+          }
+          .card-body{
+            text-align: left;
+            padding: 23px 42px;
+            @media (min-width: $width1) and (max-width: $width2) {
+              padding: 16px 28px;
+            }
+            h6{
+              font-weight: 500;
+              font-size: 13px;
+              line-height: 161%;
+              color: #050505;
+              @media (min-width: $width1) and (max-width: $width2) {
+                font-size: 10px;
+              }
+            }
+            .card-title{
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 161%;
+              color: #050505;
+              @media (min-width: $width1) and (max-width: $width2) {
+                font-size: 14px;
+              }
+            }
+            .card-text{
+              font-weight: 300;
+              font-size: 18px;
+              line-height: 150%;
+              color: #000000;
+              @media (min-width: $width1) and (max-width: $width2) {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+        @for $i from 1 through 3 {
+          .card:nth-of-type(n + #{$i}) {
+            left: ($i * 10px);
+            top: ($i * 10px);
+          }
+        }
+    }
+}

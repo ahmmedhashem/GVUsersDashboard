@@ -1,0 +1,142 @@
+@import "../../../styles.scss";
+
+.play-list{
+    padding: 206px 0 186px 0;
+    background: #003827;
+    @media (min-width: $width1) and (max-width: $width2) {
+      padding: 206px 0 40px 0;
+    }
+    .main-cont{
+        padding: 0 40px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          padding: 0;
+        }
+        .all{
+          @media (min-width: $width1) and (max-width: $width2) {
+            margin-bottom: 12px;
+          }
+            .cont{
+                background: rgba(5, 5, 5, 0.3);
+                border-radius: 17px;
+                padding: 40px 38px 29px 38px;
+                @media (min-width: $width1) and (max-width: $width2) {
+                  padding: 22px 20px 20px 20px;
+                }
+                .header{
+                    h3{
+                        font-weight: 500;
+                        font-size: 36px;
+                        line-height: 107.19%;
+                        text-align: justify;
+                        float: left;
+                        @media (min-width: $width1) and (max-width: $width2) {
+                          font-size: 24px;
+                        }
+                    }
+                    a{
+                      float: right;
+                      margin-left: 14px;
+                      svg{
+                        width: 30px;
+                        height: 30px;
+                        @media (min-width: $width1) and (max-width: $width2) {
+                          width: 16px;
+                          height: 16px;
+                        }
+
+                      }
+                    }
+                }
+                ul{
+                    margin-bottom: 20px;
+                    clear: both;
+                    li{
+                        background: linear-gradient(99.52deg, #00F07E -32.99%, #003827 120.45%);
+                        border-radius: 15px;
+                        margin: 10px 0;
+                        border: none;
+                        padding: 25px 32px;
+                        @media (min-width: $width1) and (max-width: $width2) {
+                          padding: 14px 17.5px;
+                        }
+                        .desc{
+                            h4{
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 107.19%;
+                                text-align: justify;
+                                @media (min-width: $width1) and (max-width: $width2) {
+                                  font-size: 12px;
+                                }
+                            }
+                            p{
+                                font-weight: 300;
+                                font-size: 18px;
+                                line-height: 107.19%;
+                                text-align: justify;
+                                @media (min-width: $width1) and (max-width: $width2) {
+                                  line-height: 14px;
+                                  font-size: 12px;
+                                  margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .add{
+                  font-weight: 500;
+                  font-size: 18px;
+                  line-height: 107.19%;
+                  text-align: justify;
+                  text-decoration: none;
+                  @media (min-width: $width1) and (max-width: $width2) {
+                    font-size: 14px;
+                  }
+                }
+            }
+        }
+        .all:nth-of-type(2){
+          @extend .all;
+            .cont{
+                background: rgba(5, 5, 5, 0.7);
+                .header{
+                    a{
+                        svg{
+                            width: 49px;
+                            height: 49px;
+                            @media (min-width: $width1) and (max-width: $width2) {
+                              width: 26.39px;
+                              height: 26.39px;
+                            }
+                        }
+                    }
+                }
+                ul{
+                    li{
+                      background: linear-gradient(99.52deg, #FFFFFF -32.99%, #003827 120.45%);
+                        .desc{
+                          float: left;
+                            h4,p{
+                                color: #050505;
+                            }
+                        }
+                        .butt{
+                          float: right;
+                            a{
+                              margin-left: 14px;
+                                svg{
+                                    width: 22px;
+                                    height: 22px;
+                                    @media (min-width: $width1) and (max-width: $width2) {
+                                      width: 10.77px;
+                                      height: 10.77px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

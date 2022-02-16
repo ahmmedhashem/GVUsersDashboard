@@ -1,0 +1,452 @@
+@import "../../../styles.scss";
+
+.slider{
+    background: #003827;
+    position: relative;
+    padding: 200px 0 50px 0;
+    overflow: hidden;
+    z-index: 1;
+    .shap-one{
+        position: absolute;
+        width: 1733px;
+        height: 1733px;
+        left: -1004px;
+        top: -794px;
+        background: radial-gradient(38.86% 38.86% at 50% 50%, #00E384 0%, rgba(26, 25, 29, 0) 100%);
+        @media (min-width: $width1) and (max-width: $width2) {
+          right: -1334px;
+          top: -1053px;
+          left: unset;
+        }
+    }
+    .shap-two{
+        position: absolute;
+        width: 1417px;
+        height: 1417px;
+        left: 1324px;
+        top: -307px;
+        background: radial-gradient(38.86% 38.86% at 50% 50%, #00E384 0%, rgba(26, 25, 29, 0) 100%);
+        @media (min-width: $width1) and (max-width: $width2) {
+          display: none;
+        }
+    }
+    .heart{
+      position: absolute;
+      width: 139px;
+      height: 96px;
+      left: 0;
+      top: 223px;
+      background: linear-gradient(90deg, #FFFFFF -3.6%, rgba(255, 255, 255, 0) 137.77%);
+      border-radius: 48px 0px 0px 50px;
+      transform: rotate(180deg);
+      border: none;
+      cursor: pointer;
+      z-index: 9;
+      @media (min-width: $width1) and (max-width: $width2) {
+        top: 485px;
+        width: 70px;
+        height: 48px;
+      }
+      .content{
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(138.01deg, #232323 0%, #161616 117.01%);
+        transform: rotate(180deg);
+        border-radius: 50%;
+        position: absolute;
+        top: 8px;
+        right: 52px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          width: 40px;
+          height: 40px;
+          top: 4px;
+          right: 24px;
+        }
+        svg{
+          width: 44px;
+          height: 44px;
+          position: relative;
+          top: 19px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            width: 16px;
+            height: 16px;
+            top: 7px;
+          }
+        }
+      }
+    }
+    .group{
+      @extend .heart;
+      right: 0;
+      left: unset;
+      transform: unset;
+      .content{
+        svg{
+          transform: rotate(180deg);
+        }
+      }
+
+    }
+    .line-one{
+      position: absolute;
+      width: 2696.5px;
+      height: 453.88px;
+      left: -158.32px;
+      top: 207.44px;
+      border-radius: 500px;
+      transform: rotate(4.11deg);
+      @media (min-width: $width1) and (max-width: $width2) {
+        width: 1115.74px;
+        height: 187.8px;
+        left: -420.14px;
+        top: 721.56px;
+        border-radius: 500px;
+        transform: rotate(-28.42deg);
+      }
+      svg{
+        @media (min-width: $width1) and (max-width: $width2) {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .line-two{
+      position: absolute;
+      width: 2696.5px;
+      height: 453.88px;
+      left: -171.09px;
+      top: 268.33px;
+      border-radius: 500px;
+      transform: rotate(-6.54deg);
+      @media (min-width: $width1) and (max-width: $width2) {
+        width: 1115.74px;
+        height: 187.8px;
+        left: -462.14px;
+        top: 724.56px;
+        border-radius: 500px;
+        transform: rotate(-41.42deg);
+      }
+      svg{
+        @media (min-width: $width1) and (max-width: $width2) {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .line-three{
+      position: absolute;
+      width: 2696.5px;
+      height: 453.88px;
+      left: -179px;
+      top: 318.74px;
+      border-radius: 500px;
+      transform: rotate(-15.52deg);
+      @media (min-width: $width1) and (max-width: $width2) {
+        width: 1115.74px;
+        height: 187.8px;
+        left: -462.14px;
+        top: 716.56px;
+        border-radius: 500px;
+        transform: rotate(-47.8deg);
+      }
+      svg{
+        @media (min-width: $width1) and (max-width: $width2) {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .cont{
+      background: rgba(5, 5, 5, 0.3);
+      border-radius: 17px;
+      padding: 22px 20px 20px 20px;
+      position: absolute;
+      top: 552px;
+      left: -95%;
+      width: 90%;
+      text-align: left;
+      z-index: 9;
+      transition: all 1s ease-in-out;
+      display: none;
+      @media (min-width: $width1) and (max-width: $width2) {
+        display: block;;
+      }
+      .header{
+          h3{
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 107.19%;
+              text-align: justify;
+              float: left;
+          }
+          a{
+            float: right;
+            margin-left: 14px;
+            svg{
+              width: 16px;
+              height: 16px;
+            }
+          }
+      }
+      ul{
+          margin-bottom: 4px;
+          clear: both;
+          li{
+              background: linear-gradient(99.52deg, #00F07E -32.99%, #003827 120.45%);
+              border-radius: 15px;
+              margin: 10px 0;
+              border: none;
+              padding: 14px 17.5px;
+              .desc{
+                  h4{
+                      font-weight: 500;
+                      font-size: 12px;
+                      line-height: 107.19%;
+                      text-align: justify;
+                  }
+                  p{
+                      font-weight: 300;
+                      text-align: justify;
+                      line-height: 14px;
+                      font-size: 12px;
+                      margin-bottom: 0;
+                  }
+              }
+          }
+      }
+      .add{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 107.19%;
+        text-align: justify;
+        text-decoration: none;
+      }
+    }
+    .cont-two{
+      @extend .cont;
+      right: -95%;
+      left: unset;
+      background: rgba(5, 5, 5, 0.7);
+      .header{
+          a{
+              svg{
+                width: 26.39px;
+                height: 26.39px;
+              }
+          }
+      }
+      ul{
+          li{
+            background: linear-gradient(99.52deg, #FFFFFF -32.99%, #003827 120.45%);
+              .desc{
+                float: left;
+                  h4,p{
+                      color: #050505;
+                  }
+              }
+              .butt{
+                float: right;
+                  a{
+                    margin-left: 14px;
+                      svg{
+                        width: 10.77px;
+                        height: 10.77px;
+                      }
+                  }
+              }
+          }
+      }
+    }
+    .heading{
+        margin-bottom: 40px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          text-align: left;
+          margin-bottom: 38px;
+        }
+        h3{
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 69px;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 36px;
+              padding-right: 27px;
+              line-height: 42px;
+            }
+        }
+        p{
+          font-weight: 300;
+          font-size: 24px;
+          line-height: 131%;
+          @media (min-width: $width1) and (max-width: $width2) {
+            display: none;
+          }
+        }
+    }
+    .learn-today{
+        padding: 0 15% 112px 15%;
+        @media (min-width: $width1) and (max-width: $width2) {
+          padding: 0 0 20px 0;
+        }
+        form{
+            position: relative;
+            margin-bottom: 24px;
+            margin-left: 2px;
+            @media (min-width: $width1) and (max-width: $width2) {
+             margin-bottom: 15px;
+            }
+            input{
+                width: 100%;
+                background: linear-gradient(90.02deg, rgba(255, 255, 255, 0.25) 0.97%, rgba(255, 255, 255, 0) 99.99%);
+                border-radius: 5px;
+                border: none;
+                padding: 10px 30px;
+                @media (min-width: $width1) and (max-width: $width2) {
+                  padding: 8px 48px;
+                }
+            }
+            ::placeholder{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 98.3%;
+                opacity: 1;
+                @media (min-width: $width1) and (max-width: $width2) {
+                  font-size: 12px;
+                }
+            }
+            button{
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 10px;
+                background: none;
+                border: none;
+                @media (min-width: $width1) and (max-width: $width2) {
+                  right: 48px;
+                }
+            }
+        }
+        .lesson{
+            background: linear-gradient(90deg, #00FF85 0%, rgba(0, 255, 133, 0) 222.91%);
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 98.3%;
+            text-decoration: none;
+            padding: 14px 44px;
+            margin-right: 34px;
+            display: inline-block;
+            width: 100%;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 12px;
+              padding: 8px 14px 7px 14px;
+            }
+        }
+        .profile{
+            @extend .lesson;
+        }
+        .settings{
+            @extend .lesson;
+            margin-right: 0;
+            border: 10px solid;
+            border-image-slice: 1;
+            border-width: 1px;
+            border-image-source: linear-gradient(to right,#00F37E,#013a1f);
+            background: unset;
+        }
+
+    }
+    .plus{
+        border: 2px solid #00F07E;
+        box-sizing: border-box;
+        border-radius: 17px;
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 107.19%;
+        color: #00F37E;
+        background: unset;
+        padding: 6px 24px;
+        margin-bottom: 9px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          padding: 4px 16px;
+          font-size: 52px;
+          margin-top: 22px;
+        }
+    }
+    p{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 131%;
+    }
+    .courses{
+        .content{
+          @media (min-width: $width1) and (max-width: $width2) {
+            margin-bottom: 80px;
+          }
+            position: relative;
+            .shap-light{
+                position: absolute;
+                top: -29px;
+                left: 125px;
+                width: 165px;
+                height: 165px;
+                background: radial-gradient(38.86% 38.86% at 50% 50%, rgba(0, 227, 132, 0.5) 0%, rgba(26, 25, 29, 0) 100%);
+                @media (min-width: $width1) and (max-width: $width2) {
+                  top: -19px;
+                  left: 119px;
+                  width: 115px;
+                  height: 115px;
+                }
+            }
+            h2{
+              font-weight: bold;
+              font-size: 144px;
+              line-height: 74%;
+              text-align: center;
+              color: #00F37E;
+              @media (min-width: $width1) and (max-width: $width2) {
+                font-size: 96px;
+              }
+            }
+            .disc{
+                width: 40%;
+                float: right;
+                text-align: left;
+                position: relative;
+                @media (min-width: $width1) and (max-width: $width2) {
+                  width: 44%;
+                }
+                .shap-dot{
+                    position: absolute;
+                    width: 48px;
+                    height: 48px;
+                    left: -38px;
+                    top: 0;
+                    background: radial-gradient(25% 25% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+                    transform: matrix(1, 0, 0, -1, 0, 0);
+
+                }
+                h3{
+                  font-weight: bold;
+                  font-size: 24px;
+                  line-height: 100%;
+                  @media (min-width: $width1) and (max-width: $width2) {
+                    font-size: 12px;
+                    margin-bottom: 0;
+                  }
+                }
+                hr{
+                    height: 4px;
+                    background: $textColor;
+                    opacity: 1;
+                    width: 40px;
+                    @media (min-width: $width1) and (max-width: $width2) {
+                      height: 2px;
+                      width: 17px;
+                      margin: 6px 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,225 @@
+@import "../../../styles.scss";
+
+.learning-path{
+    background: #003827;
+    position: relative;
+    padding: 50px 0 304px 0;
+    @media (min-width: $width1) and (max-width: $width2) {
+      padding: 40px 0 304px 0;
+  }
+    .back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0;
+        background: linear-gradient(268.79deg, #050505 34.59%, rgba(5, 5, 5, 0) 117.52%);
+        border-radius: 0px 287px 0px 0px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          border-radius: 0px 76px 0px 0px;
+        }
+    }
+    .heading{
+        position: relative;
+        margin-bottom: 50px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          text-align: left;
+          margin-bottom: 32px;
+        }
+        h3{
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 107.19%;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 24px;
+            }
+        }
+    }
+    .links{
+      padding: 0 320px;
+      position: relative;
+      margin-bottom: 32px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          padding: 0;
+        }
+        .one,.two{
+          @media (min-width: $width1) and (max-width: $width2) {
+            width: 40%;
+            float: left;
+            margin-bottom: 17px;
+            padding: 0 0px 0 10px;
+          }
+        }
+        .three{
+          @media (min-width: $width1) and (max-width: $width2) {
+            width: 40%;
+          }
+
+        }
+        .content{
+            position: relative;
+            @media (min-width: $width1) and (max-width: $width2) {
+                text-align: left;
+            }
+
+            .minus{
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                right: -9px;
+                top: -8px;
+                background: #00F37E;
+                color: $textColor;
+                border-radius: 50%;
+                line-height: 17px;
+                padding: 0;
+                border: none;
+                @media (min-width: $width1) and (max-width: $width2) {
+                    right: 13px;
+                }
+            }
+            button{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 98.3%;
+                border-radius: 4px;
+                text-decoration: none;
+                display: inline-block;
+                width: 100%;
+                padding: 13px 0;
+                background: unset;
+                border: 10px solid;
+                border-image-slice: 1;
+                border-width: 1px;
+                border-image-source: linear-gradient(to right,#00F37E,#000);
+                transition: all 2s ease-in-out;
+                //border: none
+                @media (min-width: $width1) and (max-width: $width2) {
+                  width: 86%;
+                  font-size: 12px;
+                }
+            }
+
+        }
+    }
+    .fileds{
+        position: relative;
+        .sec{
+            .gray{
+                background: linear-gradient(99.52deg, #E1E1E1 -32.99%, #000000 120.45%);
+                border-radius: 15px;
+                padding: 28px 32px;
+                margin: 12px 0;
+                position: relative;
+                @media (min-width: $width1) and (max-width: $width2) {
+                  padding: 17px 32px;
+                }
+                h4{
+                  font-weight: 500;
+                  font-size: 18px;
+                  line-height: 107.19%;
+                  text-align: justify;
+                  @media (min-width: $width1) and (max-width: $width2) {
+                    font-size: 12px;
+                  }
+                }
+                span.precent{
+                    position: absolute;
+                    right: 32px;
+                    top: 28px;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 107.19%;
+                    color: #FFFFFF;
+                    @media (min-width: $width1) and (max-width: $width2) {
+                      font-size: 12px;
+                    }
+                }
+                p{
+                  @extend h4;
+                  font-weight: lighter;
+                }
+                .progress{
+                    height: 3px;
+                    overflow: visible;
+                    background: #f0f0f0;
+                    margin-bottom: 18px;
+                    .progress-bar{
+                        position: relative;
+                        animation: animate-positive 2s;
+                        overflow: visible;
+                        background: #00F37E;
+                        .progress-icon{
+                            width: 21px;
+                            height: 21px;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: -10px;
+                            right: -9px;
+                            background: unset;
+                            border: 1px solid #00F37E;
+                            .dot-prog{
+                                width: 9px;
+                                height: 9px;
+                                border-radius: 50%;
+                                background: #00F37E;
+                                position: absolute;
+                                top: 6px;
+                                left: 5px;
+                            }
+                        }
+
+                        .progress-value{
+                            font-size: 13px;
+                            color: #848484;
+                            position: absolute;
+                            top: 16px;
+                            right: 0;
+                            visibility: hidden;
+                        }
+                    }
+                }
+                span.dot{
+                    position: absolute;
+                    right: 12px;
+                    bottom: 12px;
+                    width: 9px;
+                    height: 9px;
+                    border-radius: 50%;
+                }
+
+            }
+            .green{
+                @extend .gray;
+                background: linear-gradient(99.52deg, #00F07E -32.99%, #003827 120.45%);
+            }
+            .yello{
+              @extend .gray;
+              background: linear-gradient(99.52deg, #fcff2b -32.99%, #181403 120.45%);
+            }
+        }
+        .sec:nth-of-type(3n+1){
+            .dot{
+                background-color: #00F37E;
+            }
+
+        }
+        .sec:nth-of-type(3n+2){
+            .dot{
+                background-color: #FFA800;
+            }
+
+        }
+        .sec:nth-of-type(3n+3){
+            .dot{
+                background-color: #B70000;
+            }
+
+        }
+
+    }
+}
+
+.showw{
+  display: block;
+}
